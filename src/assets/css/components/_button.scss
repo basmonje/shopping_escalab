@@ -1,0 +1,102 @@
+.button-circle {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: border 0.5s, transform 0.2s, background-color 0.2s;
+
+    position: relative;
+
+    small {
+        border-radius: 50%;
+        width: 18px;
+        position: absolute;
+        top: -0.1rem;
+        right: -0.1rem;
+        background: #5c33f6;
+        padding: 0.1rem;
+        font-size: 0.7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transition: all 0.25s ease-in-out;
+
+        &:hover {
+            transform: scale(1.125);
+            transition: all 0.25s ease-in-out;
+        }
+    }
+
+}
+
+.no-set {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.button {
+    padding: 10px 25px;
+    border: 2px solid #000;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.add-cart {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    background: $bg-dark;
+
+    color: #fff;
+
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+
+    box-shadow: 0 15px 22px rgba(0, 0, 0, 0.1);
+
+    font-size: 1.2rem;
+}
+
+.close-sidebar {
+    display: flex;
+    align-items: center;
+    padding: 0.6rem;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.close-login {
+    display: flex;
+    align-items: center;
+    padding: 0.6rem;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.button-basic {
+    padding: 0.6rem 1.5rem;
+    border: 1px solid #fff;
+    cursor: pointer;
+    background: transparent;
+    color: white;
+}

@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: $text-dark;
+}
+
+button {
+    padding: 0.2rem 1rem;
+}
+
+input {
+    padding: 0.2rem 1rem;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+main {
+    overflow-y: auto;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+
+    @media (min-width: $lg) {
+        max-width: $lg;
+    }
+}

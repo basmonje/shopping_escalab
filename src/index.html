@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito de compras</title>
+    <link
+      id="favicon"
+      rel="icon"
+      href="assets/img/favicon.png"
+      type="image/png"
+      sizes="24x24"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script defer type="module" src="index.js"></script>
+  </head>
+  <body>
+    <!-- 
+      Navegacion
+     -->
+    <header class="navbar">
+      <nav class="container">
+        <div class="logo">
+          <span><b>Shopping</b> Cart</span>
+        </div>
+        <div class="menu">
+          <div class="buttons">
+            <div class="button-circle">
+              <span class="material-icons btn-restart no-set">
+                restart_alt
+              </span>
+            </div>
+            <div class="button-circle">
+              <span class="material-icons no-set btn-cart"> shopping_bag </span>
+              <small class="no-set count-nav" id="count-nav">0</small>
+            </div>
+          </div>
+          <div class="auth" id="menu-auth">
+            <div class="box-btn-auth">
+              <button class="btn-login">Iniciar sesión</button>
+            </div>
+            <div class="user">
+              <span class="name">Nombre usuario</span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- 
+      Cuerpo principal
+     -->
+    <main class="wrapper">
+      <!-- 
+        Login
+       -->
+      <div class="login" id="login">
+        <div class="login__action">
+          <h1>Iniciar sesión</h1>
+
+          <button>
+            <span class="material-icons close-login"> close </span>
+          </button>
+        </div>
+        <form id="form-login">
+          <span class="message-login"></span>
+          <div>
+            <label for="email">Correo electrónico</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Correo electrónico"
+              value="client@compra.cl"
+            />
+          </div>
+          <div>
+            <label for="password">Contraseña</label>
+            <input
+              type="password"
+              name="password"
+              placeholder="Contraseña"
+              value="123456"
+            />
+          </div>
+
+          <button type="submit">Iniciar sesión</button>
+        </form>
+        <div class="login__info">
+          <h1>Datos por defecto</h1>
+          <span>Email <b>client@gmail.cl</b></span>
+          <span>Contraseña <b>1234568</b></span>
+        </div>
+      </div>
+
+      <!-- 
+        Productos
+       -->
+      <div class="container">
+        <!-- 
+          Lista de productos
+         -->
+        
+        <div id="list-products" class="list-products"></div>
+        <template id="template-card-product">
+          <article class="card">
+            <div class="card__img">
+              <img
+                src="assets/img/products/macbook-pro.png"
+                alt="macbook pro"
+                width="100%"
+              />
+              <div class="box-btn">
+                <span class="material-icons add-cart no-set"> add </span>
+              </div>
+              <div class="stock">
+                <span class="total-stock">5</span>
+                <span class="msg">stock</span>
+              </div>
+            </div>
+            <div class="card__thumb">
+              <h1 class="title">Macbook Pro Touch bar</h1>
+              <span class="price">$ 1.250.990</span>
+            </div>
+          </article>
+        </template>
+      </div>
+
+      <!-- 
+        Sidebar shopping cart
+       -->
+      <div id="sidebar" class="sidebar">
+        <div class="sidebar__action">
+          <div class="title">
+            <h1>
+              Tu carrito (<span class="count-nav" id="count-sidebar">0</span>)
+            </h1>
+            <p id="message-cart">No has iniciado sesión</p>
+          </div>
+          <button>
+            <span class="material-icons close-sidebar"> close </span>
+          </button>
+        </div>
+        <div id="list-cart" class="sidebar__cart"></div>
+        <div id="total" class="sidebar__footer">
+          <!-- <p>Total de productos: <span class="total-products">$9999</span></p>
+          <p>Envio: <span class="total-shipping">$9999</span></p>
+          <p>Total a comprar <span class="total">$9999</span></p>
+          <div>
+            <button class="btn-checkout">Checkout</button>
+          </div> -->
+        </div>
+
+        <template id="template-total">
+          <p>Total de productos: <span class="total-products">$9999</span></p>
+          <p>Envio: <span class="total-shipping">$9999</span></p>
+          <p>Total a comprar <span class="total">$9999</span></p>
+          <div>
+            <button class="btn-checkout" id="btn-checkout">Checkout</button>
+          </div>
+        </template>
+      </div>
+
+      <template id="template-card-cart">
+        <article class="card-cart">
+          <div class="card-cart__thumb">
+            <div class="card-cart__thumb-img">
+              <img
+                src="assets/img/products/macbook-pro.png"
+                alt="macbook pro"
+                width="100px"
+              />
+            </div>
+            <div class="card-cart__thumb-info">
+              <p class="title">Macbook Pro Touch bar</p>
+              <p><span class="price">1.250.990</span></p>
+              <div>
+                <span class="material-icons sub-product no-set"> remove </span>
+                <p class="count-product">1</p>
+                <span class="material-icons add-product no-set"> add </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-cart__actions">
+            <p><span class="total">1.250.990</span></p>
+            <span class="material-icons remove-product no-set"> delete </span>
+          </div>
+        </article>
+      </template>
+
+      <!-- 
+        Checkeout
+       -->
+      <div id="checkout" class="checkout">
+        <div>
+          <h1>Estamos procesando su compra</h1>
+        </div>
+      </div>
+
+      <div id="success" class="success">
+        <div class="box">
+          <h1>Compra exitosa</h1>
+          <button class="keep button-basic">Seguir comprando</button>
+        </div>
+      </div>
+      <!-- 
+        Footer
+       -->
+    </main>
+  </body>
+</html>
