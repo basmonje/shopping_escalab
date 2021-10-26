@@ -1,5 +1,5 @@
 /**
- * Carrito de compras
+ * Observador de carrito de compras
  *
  * @author Bastian Monje
  */
@@ -10,7 +10,7 @@ export default class Observer {
   }
 
   /**
-   * Para escuchar los cambios realizados en el carrito
+   * Escuchar los cambios realizados
    *
    * @param {string} event
    * @param {function} callback
@@ -28,7 +28,7 @@ export default class Observer {
   }
 
   /**
-   * Si el evento tiene callback recorra cada uno y llámarlo
+   * Si el evento tiene callbacks recorra cada uno
    *
    * @param {*} event
    * @param {*} [data={}]
