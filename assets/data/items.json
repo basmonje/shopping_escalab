@@ -3,63 +3,63 @@
     "id": 1,
     "title": "Macbook Pro",
     "price": 1299990,
-    "img": "src/assets/img/products/macbook-pro.png",
+    "img": "assets/img/products/macbook-pro.png",
     "stock": 4
   },
   {
     "id": 2,
     "title": "Cámara Nikon Mirrorless Z50",
     "price": 1014990,
-    "img": "src/assets/img/products/nikon-z.png",
+    "img": "assets/img/products/nikon-z.png",
     "stock": 3
   },
   {
     "id": 3,
     "title": "iPad Pro 12.9 256GB WiFI Space Grey",
     "price": 1099990,
-    "img": "src/assets/img/products/ipad-pro-2.png",
+    "img": "assets/img/products/ipad-pro-2.png",
     "stock": 5
   },
   {
     "id": 4,
     "title": "Cámara Gopro Hero 7",
     "price": 349990,
-    "img": "src/assets/img/products/gopro-7.png",
+    "img": "assets/img/products/gopro-7.png",
     "stock": 2
   },
   {
     "id": 5,
     "title": "Audífonos inalámbricos Xiamo Air 2",
     "price": 45990,
-    "img": "src/assets/img/products/xiaomi-air.png",
+    "img": "assets/img/products/xiaomi-air.png",
     "stock": 0
   },
   {
     "id": 6,
     "title": "Apple Watch Series 3 Space gray black 38mm",
     "price": 209990,
-    "img": "src/assets/img/products/apple-watch-3.png",
+    "img": "assets/img/products/apple-watch-3.png",
     "stock": 3
   },
   {
     "id": 7,
     "title": "Asus Zenbook 13 Oled Intel i7, 16 RAM",
     "price": 949990,
-    "img": "src/assets/img/products/asus-oled.png",
+    "img": "assets/img/products/asus-oled.png",
     "stock": 2
   },
   {
     "id": 8,
     "title": "Consola Microsoft Xbox Series X, 1TB",
     "price": 789990,
-    "img": "src/assets/img/products/xbox-series-x.png",
+    "img": "assets/img/products/xbox-series-x.png",
     "stock": 4
   },
   {
     "id": 9,
     "title": "Cargador portátil Power Banck PAW-180",
     "price": 11990,
-    "img": "src/assets/img/products/powerbank.png",
+    "img": "assets/img/products/powerbank.png",
     "stock": 3
   }
 ]

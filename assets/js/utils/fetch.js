@@ -10,7 +10,7 @@
  * @returns {array} Lista con productos
  */
 export async function fetchProduct() {
-  const response = await fetch("items.json");
+  const response = await fetch("assets/data/items.json");
 
   if (!response.ok) {
     const message = `Ha ocurrido un error ${response.statusText}`;
